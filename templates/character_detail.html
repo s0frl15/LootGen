@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Tue Mar 05 2024 23:05:32 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="65de5ff14645e1aa806ba452" data-wf-site="65d26eac71047512b6dbe03b">
+<head>
+  <meta charset="utf-8">
+  <title>Character Information-LootGen</title>
+  <meta content="Character Information" property="og:title">
+  <meta content="Character Information" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="/static/css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="/static/css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="../../static/css/styles-light.css" rel="stylesheet" type="text/css" id="themeStylesheet">
+  <style>@media (max-width:991px) and (min-width:768px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="373c1a57-4af5-4a92-52b6-7a6f7dd8bb30"] {-webkit-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="373c1a57-4af5-4a92-52b6-7a6f7dd8bb32"] {-webkit-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="373c1a57-4af5-4a92-52b6-7a6f7dd8bb31"] {width:1.25rem;}}@media (max-width:767px) and (min-width:480px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="373c1a57-4af5-4a92-52b6-7a6f7dd8bb30"] {-webkit-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="373c1a57-4af5-4a92-52b6-7a6f7dd8bb32"] {-webkit-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0rem, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="373c1a57-4af5-4a92-52b6-7a6f7dd8bb31"] {width:1.25rem;}}</style>
+  <title>Character Details</title>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetchCharacter();
+        // Event delegation for dynamically added buttons
+        document.addEventListener('click', function(event) {
+            if (event.target && event.target.classList.contains('edit-character')) {
+                console.log("Edit Character button clicked.");
+                editCharacter();
+            } else if (event.target && event.target.classList.contains('delete-character')) {
+                console.log("Delete Character button clicked.");
+                deleteCharacter();
+            }
+        });
+    });      
+    
+    function fetchCharacter() {
+        // Parse the character ID from the URL path
+        const char_id = window.location.pathname.split('/').pop();
+        // Make sure the fetch URL matches the Flask route
+        fetch(`/characters/character/${char_id}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Character not found');
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Set the currentCharacterData variable
+                window.currentCharacterData = data;
+                // Update the page with character details
+                document.getElementById('characterInfo').innerHTML = generateCharacterDetails(data) +
+                    '<button class="edit-character">Edit Character</button>' +
+                    '<button class="delete-character">Delete Character</button>';
+                console.log("Edit and delete buttons added to the DOM.");
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('characterInfo').textContent = error.toString();
+            });
+    }
+  function generateCharacterDetails(data) {
+    // Define the order and names of the character details
+    const detailOrder = ['Character Name', 'Class', 'Race', 'Level', 'Armor Class', 'Hit Points', 'Strength Score', 'Dexterity Score', 'Constitution Score', 'Intelligence Score', 'Wisdom Score', 'Charisma Score', 'Background'];
+    const detailNames = {
+        'Character Name': 'name',
+        'Class': 'class_name',
+        'Race': 'race',
+        'Level': 'level',
+        'Armor Class': 'armor_class',
+        'Hit Points': 'hit_points',
+        'Strength Score': 'strength_score',
+        'Dexterity Score': 'dexterity_score',
+        'Constitution Score': 'constitution_score',
+        'Intelligence Score': 'intelligence_score',
+        'Wisdom Score': 'wisdom_score',
+        'Charisma Score': 'charisma_score',
+        'Background': 'background_type'
+    };
+
+    // Generate character details in the specified order
+    var detailsHtml = '<ul style="list-style-type: none; padding-left: 0;">'; // Add style here
+    detailOrder.forEach(detail => {
+        const key = detailNames[detail];
+        const value = data[key];
+        if (value !== undefined) {
+            detailsHtml += `<li style="padding-left: 20px;">` +
+                           `<div class="sysf-input-with-label">` +
+                           `<label for="${key}" class="sysf">${detail}:</label>` +
+                           `<input class="sysf-input-2 sysf-medium w-input" maxlength="256" name="${key}" data-name="${key}" placeholder="Type ${detail} Here..." type="text" id="${key}" value="${value}" readonly>` +
+                           `</div>` +
+                           `</li>`;
+        }
+    });
+    detailsHtml += '</ul>';
+    return detailsHtml;
+}
+
+
+
+function editCharacter() {
+    var data = window.currentCharacterData;
+    if (data) {
+        // Define fields to exclude
+        const excludeFields = ['User owner', 'Character ID', 'subclass', 'subrace'];
+
+        // Define the order and names of the character details
+        const detailOrder = ['Character Name', 'Class', 'Race', 'Level', 'Armor Class', 'Hit Points', 'Strength Score', 'Dexterity Score', 'Constitution Score', 'Intelligence Score', 'Wisdom Score', 'Charisma Score', 'Background'];
+        const detailNames = {
+            'Character Name': 'name',
+            'Class': 'class_name',
+            'Race': 'race',
+            'Level': 'level',
+            'Armor Class': 'armor_class',
+            'Hit Points': 'hit_points',
+            'Strength Score': 'strength_score',
+            'Dexterity Score': 'dexterity_score',
+            'Constitution Score': 'constitution_score',
+            'Intelligence Score': 'intelligence_score',
+            'Wisdom Score': 'wisdom_score',
+            'Charisma Score': 'charisma_score',
+            'Background': 'background_type'
+        };
+
+        // Create input fields for editing based on the current character data, excluding specified fields
+        var editHtml = '<ul style="width: 80%; margin: 0 auto;">';
+        editHtml += detailOrder.map(detail => {
+            const key = detailNames[detail];
+            const value = data[key];
+            if (!excludeFields.includes(detail)) {
+                return `<li>` +
+                       `<label for="edit_${key}" class="sysf-input-title-2">${detail}:</label>` +
+                       `<input class="sysf-input-2-copy sysf-medium w-input" maxlength="256" name="${key}" data-name="${key}" placeholder="Type ${detail} Here..." type="text" id="edit_${key}" value="${value}" required="">` +
+                       `</li>`;
+            } else {
+                return '';
+            }
+        }).join('');
+        editHtml += '</ul>';
+        editHtml += '<button onclick="submitCharacterEdit()">Submit</button>';
+
+        document.getElementById('characterInfo').innerHTML = editHtml;
+    }
+}
+
+    
+    function submitCharacterEdit() {
+        // Get the updated data from input fields
+        var updatedData = {};
+        document.querySelectorAll('#characterInfo input').forEach(input => {
+            updatedData[input.id.replace('edit_', '')] = input.value;
+        });
+    
+        // Send updated data to the Flask route
+        const char_id = window.location.pathname.split('/').pop();
+        fetch(`/characters/update_character/${char_id}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(updatedData)
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to update character');
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Optionally update UI to indicate success
+            console.log('Character updated successfully:', data);
+            // Reload the page to reflect the updated character information
+            window.location.reload();
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            // Optionally update UI to indicate error
+        });
+    }
+    
+    function deleteCharacter() {
+        console.log("Delete button clicked.");
+        var char_id = window.currentCharacterData.character_id;
+        if (char_id) {
+            fetch(`/characters/delete_character/${char_id}`, {
+                method: 'DELETE',
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Deletion failed');
+                }
+                return response.json();
+            })
+            .then(data => {
+                alert('Character deleted successfully');
+                // Navigate back to user_page.html without making an additional request
+                window.location.href = '/characters/user_page';
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error deleting character');
+            });
+        } else {
+            console.error("Character ID not found in current character data.");
+        }
+    }   
+</script>
+</head>
+<body>
+    <div data-w-id="373c1a57-4af5-4a92-52b6-7a6f7dd8bb0f" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="combine-nav3_component w-nav">
+        <div class="combine-padding-global">
+          <div class="combine-nav3_container">
+            <a href="#" class="combine-nav3_logo-link w-inline-block"></a><img id="secondImage" src="../static/images/LootGen_Logo_Dark.png" alt="Second Image"></a>
+            <nav role="navigation" class="combine-nav3_menu w-nav-menu">
+              <div class="combine-nav3_link-wrapper">
+                <a href="/" class="combine-nav3_link w-nav-link">Home</a>
+                <a href="/prompt/select_characters" class="combine-nav3_link w-nav-link">App</a>
+                <a href="/welcome" class="combine-nav3_link w-nav-link">Profile</a>
+                <div data-hover="false" data-delay="0" class="combine-nav3_dropdown w-dropdown">
+                  <div class="combine-nav3_dropdown-toggle w-dropdown-toggle">
+                    <div class="combine-nav3_icon w-icon-dropdown-toggle"></div>
+                    <div>Hoard</div>
+                  </div>
+                  <nav class="combine-nav3_dropdown-list w-dropdown-list">
+                    <div class="combine-nav3_dropdown-wrapper">
+                      <div class="combine-nav3_dropdown-column">
+                        <a href="#" class="combine-nav3_item w-dropdown-link">Overview</a>
+                        <a href="#" class="combine-nav3_item w-dropdown-link">Watch Demo</a>
+                        <a href="#" class="combine-nav3_item w-dropdown-link">Features</a>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+              <div class="combine-nav3_button-wrapper">
+                <button id="toggleThemeButton"><img id="modeImage" src="" alt="Mode Image" ></button>
+                <a href="/login" class="combine-button-small-copy w-button"><strong>Login</strong></a>
+                <a href="/signup" class="combine-button-small-copy w-button"><strong>Sign-Up</strong></a>
+              </div>
+            </nav>
+            <div class="combine-nav3_menu-button w-nav-button">
+              <div class="combine-menu-icon">
+                <div data-w-id="ccd0207d-836f-fb81-37c5-f3df29bbc82c" class="combine-menu-icon_line-top"></div>
+                <div data-w-id="ccd0207d-836f-fb81-37c5-f3df29bbc82d" class="combine-menu-icon_line-middle"></div>
+                <div data-w-id="ccd0207d-836f-fb81-37c5-f3df29bbc82e" class="combine-menu-icon_line-bottom"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <body>
+        <section class="hero-heading-center">
+          <div class= "form-block-2 w-form">
+            <h1 style="position: float; left: 15%;">Character Details</h1>
+            <ul style="max-width: 75%; margin: 0 auto;">
+            <div id="characterInfo"></div> 
+            </ul>
+          </div>
+        </section>
+      </body>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleButton = document.getElementById('toggleThemeButton');
+            const modeImage = document.getElementById('modeImage');
+            const secondImage = document.getElementById('secondImage'); // Add this line to get the second image element
+            let isDarkMode = localStorage.getItem('dark-mode') === 'true';
+        
+            // Function to toggle dark mode
+            function toggleDarkMode() {
+                isDarkMode = !isDarkMode;
+                if (isDarkMode) {
+                    document.getElementById('themeStylesheet').href = '../../static/css/styles-dark.css';
+                    modeImage.src = '../../static/images/light_mode_sun.png'; // Change image source for dark mode
+                    secondImage.src = '../../static/images/LootGen_Logo_Light.png'; // Change second image source for dark mode
+                    localStorage.setItem('dark-mode', 'true');
+                } else {
+                    document.getElementById('themeStylesheet').href = '../../static/css/styles-light.css';
+                    modeImage.src = '../../static/images/dark_mode_moon.png'; // Change image source for light mode
+                    secondImage.src = '../../static/images/LootGen_Logo_Dark.png'; // Change second image source for light mode
+                    localStorage.setItem('dark-mode', 'false');
+                }
+            }
+        
+            // Check if dark mode should be enabled by default
+            if (isDarkMode) {
+                document.getElementById('themeStylesheet').href = '../../static/css/styles-dark.css';
+                modeImage.src = '../../static/images/light_mode_sun.png'; // Set initial image source for dark mode
+                secondImage.src = '../../static/images/LootGen_Logo_Light.png'; // Set initial second image source for dark mode
+            } else {
+                modeImage.src = '../../static/images/dark_mode_moon.png'; // Set initial image source for light mode
+                secondImage.src = '../../static/images/LootGen_Logo_Dark.png'; // Set initial second image source for light mode
+            }
+        
+            // Event listener for the dark mode toggle button
+            toggleButton.addEventListener('click', toggleDarkMode);
+        });
+        </script>
+    </html>

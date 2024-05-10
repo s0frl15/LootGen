@@ -1,0 +1,1502 @@
+commit ddf575cacd3eed97d434bf0b47efbb056214d2d7
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Wed May 8 01:50:16 2024 -0500
+
+    removed the cloning statement from the README.md f
+    ile.
+
+commit 5d426259b1e68f046e459767807d6933f8b2d1d6
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Wed May 8 01:45:16 2024 -0500
+
+    Updated the readme to be more descriptive and adde
+    d a requirements file for na alternative installat
+    ion method. Also added badges to the readme file,
+    the logo, formatted code blocks, and fixed some ty
+    pos.
+
+commit 6ba5802e7f502cf98dd4cb08246c7368a95d9186
+Author: Levi Franklin <lfranklin6@leomail.tamuc.edu>
+Date:   Wed May 8 04:16:45 2024 +0000
+
+    README.md edited online with Bitbucket
+
+commit bf18180cf90760cc4e496feadc9771fdad0ac01b
+Author: Levi <lnfranklin1@gmail.com>
+Date:   Tue May 7 23:09:33 2024 -0500
+
+    Updated README file to be completed with accurate infomation
+
+commit add3c65b32faa29e59e0bf3868197915a7816ab6
+Merge: 5f9a398 864c5a6
+Author: Sam Lea <samglea@yahoo.com>
+Date:   Mon May 6 03:15:11 2024 +0000
+
+    Merged in bugfix/LOOT-122-class-null-in-editing-issue (pull request #19)
+    
+    fixed correct file, class_name added to shown list
+    
+    Approved-by: Levi Franklin
+
+commit 864c5a6eb873508d0743be81f1cdea32c658b473
+Author: Sam Lea <samglea@example.com>
+Date:   Sun May 5 22:09:45 2024 -0500
+
+    fixed correct file, class_name added to shown list
+
+commit 5f9a398f09d43460b98028272f1283d5f05faddc
+Merge: 7fdc213 23a5da6
+Author: Levi Franklin <lfranklin6@leomail.tamuc.edu>
+Date:   Mon Apr 29 21:53:24 2024 +0000
+
+    Merged in bugfix/LOOT-123-fix-custom-loot-prompt-issue (pull request #18)
+    
+    Fixed issues with prompt where the correct prompt had been over written with an older version.
+    
+    Approved-by: Dylan De La Rosa
+
+commit 23a5da6cfaeaf5c49449b43a8152d4d7afc19869
+Author: Levi <lnfranklin1@gmail.com>
+Date:   Mon Apr 29 16:34:37 2024 -0500
+
+    Fixed issues with prompt where the correct prompt had been over written with an older version.
+
+commit d9a62939982af31ecd05f3a5be952f2917da7948
+Merge: 84f48bd 7fdc213
+Author: Levi Franklin <lfranklin6@leomail.tamuc.edu>
+Date:   Mon Apr 29 21:26:28 2024 +0000
+
+    Merged main into bugfix/LOOT-123-fix-custom-loot-prompt-issue
+
+commit 7fdc213958b0abb95c4b4945d5073b2957bfecf8
+Merge: 84f48bd 251a807
+Author: Sam Lea <samglea@yahoo.com>
+Date:   Mon Apr 29 21:18:53 2024 +0000
+
+    Merged in bugfix/LOOT-122-class-null-in-editing-issue (pull request #17)
+    
+    hopefully fixed min/max and null class bugs
+    
+    Approved-by: Levi Franklin
+
+commit 251a807bd15f9bd16463994e8b8a6bc124296604
+Author: Samglea <samglea@yahoo.com>
+Date:   Mon Apr 29 13:13:30 2024 -0500
+
+    hopefully fixed min/max and null class bugs
+
+commit 84f48bdd25f10101866492b746c61e0836f8dd6a
+Merge: d1dfac7 60e1606
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Mon Apr 29 05:09:01 2024 +0000
+
+    Merged Levi-Franklin/corrected-issue-where-form-data-was-not--1714367036455 into main
+
+commit 60e1606cd04bdf6839d7853cdb2e2794361acbd4
+Author: Levi Franklin <lfranklin6@leomail.tamuc.edu>
+Date:   Mon Apr 29 05:04:43 2024 +0000
+
+    Corrected issue where form data was not properly being transmitted to backend prompt to make decision between custom and standard loot.
+
+commit d1dfac720888f7cb1ef3566df207875b66f7d4e2
+Merge: b6f24ce f818c4b
+Author: Collin Trehar <ctre97@gmail.com>
+Date:   Mon Apr 29 03:42:39 2024 +0000
+
+    Merged in feature/LOOT-121-integrate-dark-mode (pull request #15)
+    
+    Dark mode integrated for entire site.
+    
+    Approved-by: Levi Franklin
+
+commit f818c4bd6fd22e8c59a76ff0c7b019d8bd83d8dc
+Author: Ctre97 <ctre97@gmail.com>
+Date:   Sun Apr 28 21:49:04 2024 -0500
+
+    Dark mode integrated for entire site. Site will
+    default to user's browser preference, but can
+    be updated via the toggle button on the navbar
+
+commit 3d7247ecb88aa205c3a2a4bd58a44a1492dd027a
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Sat Apr 27 00:47:43 2024 -0500
+
+    commit for older work
+    
+    -- images/
+       -- 65e1e9ef-6a0a-4232-9d79-5c7c4cbde5d0.png
+       -- db204aff-2783-412a-9f3d-8ff54d267d9f.png
+    
+    -- login.html
+        = login page was not needed.
+    -- page-sitemap.xml
+        = sitemap for pages
+    -- robots.txt
+        = robots.txt file for search engines
+    -- sitemap.xml
+        = sitemap for search engines to crawl
+    
+        * this is all exported from the versoly app
+
+commit 3e25012d5cba599f6b0cbbeef15cd7bcae77cc44
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Sat Apr 27 00:47:00 2024 -0500
+
+    commit from older work
+    
+    -- darkmodebtn.html
+    -- darkmodelocalstorage.js
+    
+    --> darkmodebtn.html
+        = added html for darkmode button
+    
+    --> darkmodelocalstorage.js
+        = added very basic js for darkmode button usin
+        the DOM (does not save in local storage yet)
+
+commit 32cdf4baf5b023a1189a2d3be711f6d134b4abfe
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Sat Apr 27 00:40:12 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = main.css
+    
+    --> main.css:
+        = css file for the main page of the versoly we
+        bsite.
+        = contained in the export folder of the versol
+        y project.
+        = required for handoff, but never requested
+        until now.
+
+commit dfdfa869f3e5c94b82229831a1d71baa1a61274e
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Sat Apr 27 00:34:00 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = versoly/index.html
+    
+    --> index.html:
+        = created the new landing page and theme for
+        version 5 of the lootgen frontend.
+        = new designs for the navrbar, footer, and
+        main content area. cleaner and more modern
+        look.
+        = added new clean logo to the navbar and foote
+        r of the page.
+        = added a shadow effect to the navbar
+        = added seperate login and signups in versoly
+        = new hero section with video demo of the app
+        = new hero section with updated product descri
+        ption. also a js button with an arrow on hover
+        = watch demo hero button for full video demo
+        = added no credit card required section for Le
+        gal reasons
+        = updated the color scheme to accent the right
+        areas of the page
+        = added a toggle button design for darkmode
+
+commit 2d924352b18f69d6cb497ca74ab1f7c6f0b715fa
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Sat Apr 27 00:32:07 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = styles.css
+    
+    --> styles.css:
+        = the css file for the versoly project which a
+        cts as the main stylesheet for the project. be
+        cause of how tailwindcss works, this file is u
+        sed to override the default styles and add cus
+        tom styles to the project on top of the tailwi
+        ndcss styles.
+
+commit d8383fc0de4b85f35f0db5adf387241042aa93ff
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Sat Apr 27 00:29:59 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = tailwind.config.js
+    
+    --> tailwind.config.js:
+        = this file is not naturally exported with the
+        tailwindcss package, so it must be created fro
+        m the theme section of versoly to handoff
+        = this file is used to configure the tailwind
+        css framework with the proper theme colors, fo
+        nts, and other styles that are used in the web
+        design
+
+commit c0944bd2d7c0d5ff450088f12de9e462bd28f657
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Sat Apr 27 00:28:28 2024 -0500
+
+    commit for older work --
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = lg-versoly.json
+            - this files is a json file of all the sty
+            les used in the versoly website to render
+            the page.
+
+commit 3f152da10e5a4eed8e15d67081a3b96946d62bd7
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Sat Apr 27 00:13:18 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = webflow.js
+    
+    --> this file is a javascript file that was used
+    to add functionality to the webflow final project
+
+commit 4ce48954f520b2ffa6b69701d093ae4118f5d745
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Sat Apr 27 00:12:29 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = webflow-final/dylans-lootgen-ai.webflow.css
+        = webflow-final/normalize.css
+        = webflow-final/webflow.css
+    
+    --> these files are the final webflow export files
+        that were used to create the webflow site.
+
+commit 65452fd3b8b90ec42434875294efb9f74dd0c590
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Sat Apr 27 00:10:54 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = 65ce8e5e961bdeb3dc1ce3d2_LootGen-Website-Tem
+        plate-14-p-130x130q80.png
+        = 65ce8e5e961bdeb3dc1ce3d2_LootGen-Website-Tem
+        plate-14.png
+        = 65ce90a47efd26d7d312bf61_lg-title-logo-2.svg
+        = LootGen-Website-Template-14.svg
+        = barbarian_fighting-p-500.jpg
+        = barbarian_fighting-p-800.jpg
+        = barbarian_fighting.jpg
+        = dm_disappointed-p-500.jpg
+        = dm_disappointed-p-800.jpg
+        = dm_disappointed.jpg
+        = favicon.png
+        = image_2024-03-10_163537342-p-1080.png
+        = image_2024-03-10_163537342-p-500.png
+        = image_2024-03-10_163537342-p-800.png
+        = image_2024-03-10_163537342.png
+        = logo4.png
+        = lootgen_logo_filled_32x32_2.png
+        = lootgen_logo_filled_48x48_2.png
+        = untitled-ui-logo-p-130x130q80.png
+        = untitled-ui-logo.png
+        = untitled-ui-logomark.svg
+        = warrior_wading-p-500.jpg
+        = warrior_wading-p-800.jpg
+        = warrior_wading.jpg
+        = webclip.png
+        = wizard_frolicking-p-500.jpg
+        = wizard_frolicking-p-800.jpg
+        = wizard_frolicking.jpg
+    
+    --> these are the files that were added to the web
+    flow-final directory folder for various content
+    and design elements.
+
+commit ad94d83096310eab65296279025572511a348b06
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Sat Apr 27 00:08:53 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- animation---1709061657569.json
+    -- animation---1709063223116.json
+    -- darkmodebutton-2.json
+        = animations and components for the webflow pr
+    oject.
+
+commit c3f29ef6b447354b8b4ce261c24cfa0acabb4b09
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Sat Apr 27 00:06:21 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = webflow-final/character-storage.html
+    
+    --> character-storage.html:
+        = added a new page for the character storage
+        as requested due to it not being implemented
+        by other team members.
+        = used the design based off of the html of
+        simmilar software to create the page.
+
+commit 925fc40ea5fc1068fc942b02802aa4d458b6b394
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Sat Apr 27 00:00:27 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = webflow-final/index.html
+    
+    --> index.html
+        = created new landing page for v4 of the web
+        flow site.
+        = created a new banner with seperate log in an
+    d sign up buttons as requested.
+        = created a new section for the features of th
+    e web app.
+        = created a new navbar with updated logo and
+        appropiate links.
+        = created a new footer with appropiate links
+        and information. including terms of service,
+        privacy policy, and cookies.
+        = created a copyright section with appropiate
+        information.
+        = added logo to the footer
+        = refinements of the theme were made at this t
+        ime.
+        = added get started and learn more buttons wit
+        updated theme styling.
+        = added a new section for a demo image or vide
+    o. or image to be displayed.
+        = added a bar to seperate the login and sign u
+        p buttons from the rest of the navbar.
+
+commit b9813fa6bbe2635ccba9ebfc0c6a072bbef4ef0d
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Fri Apr 26 23:49:58 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = webflow-final/app.html
+        = webflow-final/app-copy.html
+        = webflow-final/app-learn.html
+    
+    -- these files are the final versions of the web
+    app, some of which are broken due to improper han
+    dling by team members. but luckily it was download
+    ed before this happened.
+    
+    --> app.html:
+        = this is the main page of the web app
+        = added a new section for the app to learn ab
+    out the app
+        = created UI for app logo with banner to nav
+        igate to learn or generator, drop downs
+        and checklists for selecting options, and a bu
+        tton to generate loot with a custom prompt
+        = added a modify prompt regenerate button
+        = added an export button
+        = added a lootie logo and a generation lottie
+        file animation
+        = added nav bar to top of page with links to
+        other pages on the site
+    
+    * many of the UI elements were never used by the
+    integration team, so they were never implemented.
+    -- unused elements:
+        = drop downs, checklists
+        = prompt forms (due to the integration team no
+        t implementing safe SQL injection prevention m
+        thods)
+        = lootie desciptor
+        x loading animation (loading animation was imp
+        lemented recently)
+
+commit 573601c67c9bf14bb2b64b6f4c06d9dc6a70d703
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Fri Apr 26 23:46:00 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = about-us.html
+    
+    --> about-us.html:
+        - (Sam) added about page with basic content
+        for the lootgen team memebers and lore. includ
+        ing 4 banners of the team members and 2 banner
+        s of the lore charactrs, lootie and barbarn.
+
+commit 7f17b593707053c6f51c7b407d26ee529e0ae920
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Fri Apr 26 23:23:49 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = webflow.js
+    
+    --> webflow.js is a file that contains the webflow
+        interactions for the new project.
+
+commit 13f4d2ff3a3b5447ef501fd267702aea145b9f59
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Fri Apr 26 23:21:40 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        - webflow-new/dylans-lg-new.webflow.css
+        - webflow-new/normalize.css
+        - webflow-new/webflow.css
+    --> webflow-new/dylans-lg-new.webflow.css
+        = this is the css file that was exported from
+        webflow. it is the css file that is used to
+        style the new webflow site.
+    --> webflow-new/normalize.css
+        = this is the normalize css file that was
+        exported from webflow. it is used to normalize
+        the css across different browsers.
+    --> webflow-new/webflow.css
+        = this is the styles css file that was exporte
+        d from webflow. it is the css file that is use
+        d to style the new webflow site.
+
+commit 30586d7e19b8309565558b1e182a9502c21fae03
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Fri Apr 26 23:16:52 2024 -0500
+
+    commit for older work --
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = webflow-new/character-list.html:
+    
+    --> this file was created to display the list of
+    characters the user owns. Never finished.
+
+commit 55f218aab3f026941d60412b631a43ed1fdc5cce
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Fri Apr 26 23:12:57 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = webflow-new/character-information.html
+    
+    --> character-information.html is a page that was
+        created by Sam for the webflow-new project. it
+        is a page that displays information about char
+        acters  the user has made. Nobody finished or
+        worked on this page further so it was never in
+        tegrat ed but it should have been finished as
+        it is mostly complete.
+
+commit bb55e140976c2583ce6c4878146bb208d74c3335
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Fri Apr 26 23:10:27 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions: added images to the webflow-new fol
+    der. these images are used in the webflow project
+    for the lootgen-new website.
+    
+    --> images:
+        = webflow-new/65ce788eaec5c58c0514cd68_LootGen-Website-Template-9.svg
+        = webflow-new/65ce8e5e961bdeb3dc1ce3d2_LootGen-Website-Template-14.png
+        = webflow-new/65ce90a47efd26d7d312bf61_lg-title-logo-2.svg
+        = webflow-new/CloakOfPhoenixFlame-p-500.png
+        = webflow-new/CloakOfPhoenixFlame-p-800.png
+        = webflow-new/CloakOfPhoenixFlame.png
+        = webflow-new/Custom-Size-\342\200\223-1.png
+        = webflow-new/LootGen-Website-Template-14.svg
+        = webflow-new/Switch-Handle.svg
+        = webflow-new/arrow-right.svg
+        = webflow-new/check.svg
+        = webflow-new/favicon.ico
+        = webflow-new/image-4-2.png
+        = webflow-new/lg-chest-icon-1.svg
+        = webflow-new/lg-download-icon-1.svg
+        = webflow-new/lg-logo-white-only-2.gif
+        = webflow-new/lg-logo-white-only-2.png
+        = webflow-new/logo3.png
+        = webflow-new/logo36.png
+        = webflow-new/logo4.png
+        = webflow-new/lootgen_logo_filled_32x32_3lootgen_logo_filled_32x32_2.png
+        = webflow-new/webclip.png
+        = webflow-new/whisperblade_badversion.png
+
+commit aaa6a7643cd4026db96fcae8f53934c9e4b5dd82
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Fri Apr 26 23:05:22 2024 -0500
+
+    commit for older work -- 2024-09-26
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = 401.html
+        = 404.html
+        = access-denied.html
+        = reset-password.html
+        = test-page.html
+        = untitled-2.html
+        = untitled.html
+        = update-password.html
+    
+    --> added new nav bar to the above files
+    --> untitled.html:
+        = created a basic form test page
+    --> untitled-2.html:
+        = created new version of the nav bar (v3)
+
+commit 20a1ce3aee69f2d902b48320de2b40e0f506c6b5
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Fri Apr 26 23:01:32 2024 -0500
+
+    commit for older work -- 2019-09-25
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = sign-up.html:
+    
+    --> log-in.html:
+        = updated sign-up.html to include new navbar
+        = updated sign-up.html to include new footer
+
+commit 543bf2ba94030931a9ee4ed745af106690e20a73
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Fri Apr 26 22:58:37 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = user-account.html
+    
+    --> user-account.html:
+        = added user account page for webflow-new
+        which includes the new nav bar and footer
+
+commit e16dd78b0761e7f8f07c1d77699dd6c3bbf6df42
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Fri Apr 26 22:54:27 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result,
+     so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = log-in.html
+    
+    --> log-in.html:
+        = created a new log-in page for the webflow
+        project. this page is a clean log-in page that
+        takes from the design of the latest sign-up pa
+        ge.
+        = enhanced color scheme with better contrast
+        under common web standards for accessibility.
+        = added a newly refine logo asset in a more pr
+        ofessional and clean position.
+        = added a welcome message to the user to make
+        the page more welcoming and friendly.
+        = added a login message to assist the user
+
+commit 0528558e66732fdd7d83f64c0eba19accf774b29
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Fri Apr 26 22:48:40 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = index.html
+    
+    -- index.html:
+        = new design for landing page
+        = updated landing page with app demo implement
+        = create new nav bar with updated links and st
+    yles that match the new design
+        = added new footer with updated links and styl
+    es that match the new design
+        = added new hero section with updated styles a
+    nd design
+        = added new login/signup button with updated s
+    tyles and design to match the new design/theme
+        = (Sam) added custom image to item gallery sec
+        tion
+
+commit a7557ea78b8318abe2cd80198bc47cf33c857dd3
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Fri Apr 26 22:37:34 2024 -0500
+
+    commit for older work --
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = reset-password.html
+    
+    --> reset-password.html:
+        = added the reset password page for the webflo
+        project. this page is used to reset the passwo
+        rd for the user.
+
+commit 6dd07d83aa2f58de3e33d6c46754bb6e7c113d37
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Fri Apr 26 22:35:49 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = update-password.html
+    
+    -- update-password.html:
+        = created a basic html file for the update pas
+        sword page using webflow
+
+commit 9b0e8f9488688f7bc4501a185438a78dafb468b9
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Fri Apr 26 22:33:40 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = fa-brands-400.woff2
+        = MaterialIconsOutlined-Regular.otf
+    
+    --> fonts were researched, found, and inserted in
+     as custom fonts where wevflow exported them in th
+     is format.
+
+commit 7fc2600250c6a4289d2c14b709e46e978de86e82
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Fri Apr 26 22:31:30 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = dylan-lg.webflow.css
+        = normalize.css
+        = webflow.css
+    
+    --> dylan-lg.webflow.css
+        - this file is the css file that was exported
+        from webflow. it contains the css for the webf
+        low project that was created for dylan-lg webs
+        ite.
+    
+    --> normalize.css
+        - this file is the normalize css file that was
+        exported from webflow. it contains the normali
+        ze css for the webflow project that was create
+        d for dylan-lg website.
+    
+    --> webflow.css
+        - this file is the webflow css file that was e
+        xported from webflow. it contains the webflow
+        css for the webflow project that was created f
+        or dylan-lg website.
+
+commit 766efc1a1c25d5acd7189872af0a7024aa9a963a
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Fri Apr 26 22:28:03 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = 65ce8e5e961bdeb3dc1ce3d2_LootGen-Website-Tem
+        plate-14.png
+        = Icon-Right.svg
+        = LootGen-Website-Template-12.svg
+        = LootGen-Website-Template-14.svg
+        = ar_on_you.svg
+        = barbarn256.png
+        = bars-solid.svg
+        = bg-lines-green.svg
+        = bg-lines-lightblue3.svg
+        = favicon.png
+        = icon-info-circle.svg
+        = key.svg
+        = lg-chest-icon.svg
+        = lg-download-icon.svg
+        = lg-logo-white-only22.png
+        = lg-logo-white-refined.png
+        = lg-purplecircle_samVersion-1-p-1080.png
+        = lg-purplecircle_samVersion-1-p-500.png
+        = lg-purplecircle_samVersion-1-p-800.png
+        = lg-purplecircle_samVersion-1.png
+        = lg-title-logo-2.svg
+        = lock_open.svg
+        = logo-Philips.svg
+        = logo-dell.svg
+        = logo-monday.com.svg
+        = logo-mural.svg
+        = logo-rakuten.svg
+        = logo-ted.svg
+        = lootgen_logo_only_outline_blackVersion3-p-50
+        0.png
+        = lootgen_logo_only_outline_blackVersion3-p-80
+        0.png
+        = lootgen_logo_only_outline_blackVersion3.png
+        = placeholder-2.svg
+        = task_alt.svg
+        = task_alt_1.svg
+        = webclip.png
+    
+    --> for aboive files:
+        = created compnents, icons, logos, and images
+        for the webflow project and compiled them in t
+        he webflow website folder.
+        = also paid for webflow to faciliate developme
+        nt and design process with Sam.
+
+commit d6566a4f41ef256c95bbed72f100df16b8c6d0c5
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Fri Apr 26 22:26:06 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = user-account.html:
+    
+    --> user-account.html:
+        = added the user account page for the webflow
+        project. this page is the user account page
+        with basic functionality to change user info
+        like name, email, password, and establish con
+        sent for marketing emails.
+
+commit 85cc1f679709c6986470a0a1f5f3f8686fc15e4b
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Fri Apr 26 22:24:28 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = styles.html
+    
+    --> styles.html
+        = created styles page for webflow to use as a
+        reference for the design of the webflow projec
+        t.
+
+commit 05aabf62831d86857509c5c176f24a98341d8608
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Fri Apr 26 22:16:47 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = sign-up.html:
+    
+    --> log-in.html:
+        = added sign up title and lootgen logo
+        = created dark mode color scheme for cleaner
+        look on the sign-up container (esatblished
+        the dark mode color scheme at this time thru
+        color research and testing)
+        = added a ui + form for user to sign up using:
+            - email
+            - name
+            - password
+        = added privacy policy and terms of service
+        = added a button to submit the sign up form
+        = added a button to navigate to the log-in pag
+    e
+        = nav bar and footer were not added at this ti
+    me but previously during creation of landing page.
+    --> navbar
+        = created a lootgen logo, added to the navbar
+        (the process of creating the logo tooks time
+        to get a design that was simple and clean)
+        = title with .ai lootgen-pink design
+        = added a button to navigate to the log-in and
+        sign-up pages
+        = added a button to navigate to the home page
+        = added a button to navigate to the about page
+        = added a button to navigate to the profile pa
+    ge
+        = added a button to navigate to the hoard page
+
+commit b0738312d60b5ba54cf982c755c633b79e357306
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Fri Apr 26 22:09:40 2024 -0500
+
+    commit for older work -- 2019-09-25 16:00:00
+    -- this is because commit process wasn't establish
+    ed or easily done for the web design/develop
+    ment process. handoff method was used as a result
+    , so documenting the work done in the past is nece
+    ssary.
+    
+    -- additions:
+        = log-in.html
+    
+    --> log-in.html:
+        = created basic html structure
+        = edited CSS via webflow
+        = final design for log-in page
+        =
+
+commit 55fe3b1e7d3ad53a01225ed604640599f0bf685e
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Fri Apr 26 22:06:44 2024 -0500
+
+    commit for older work - webflow index.html page -
+    a langding page for webflow website final version
+    out of succsesive changes in the webflow creation
+    space on the webflow website. This is the final
+    version of the index.html page for the webflow
+    implementation.
+
+commit a6c4b9df1c8a98885afc0fa34783489e58c74915
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Fri Apr 26 21:33:01 2024 -0500
+
+    commit for older work -- creation of UI designs
+    for LootGen with Canva, including Landing Page,
+    Application Page, User Page, and Login Page
+    with dark mode versions of the Landing Page
+
+commit b6f24cea83af9590175a67b030a77dc288c09742
+Merge: 8a9750e b3dc0fb
+Author: Levi Franklin <lfranklin6@leomail.tamuc.edu>
+Date:   Tue Apr 23 21:06:55 2024 +0000
+
+    Merged in Levi-Franklin/configpy-edited-online-with-bitbucket-1713906401370 (pull request #14)
+    
+    config.py edited online with Bitbucket
+
+commit b3dc0fbf08866291b0d9e5ecf63a958c63204103
+Author: Levi Franklin <lfranklin6@leomail.tamuc.edu>
+Date:   Tue Apr 23 21:06:42 2024 +0000
+
+    config.py edited online with Bitbucket
+
+commit 8a9750e7c6dffa487c333011b0e073069d0e08b1
+Merge: f525b50 eaea748
+Author: Sam Lea <samglea@yahoo.com>
+Date:   Tue Apr 23 21:02:16 2024 +0000
+
+    Merged in bugfix/LOOT-92-remove-character-portrait-field (pull request #13)
+    
+    removed character field here as well
+    
+    Approved-by: Levi Franklin
+
+commit eaea74873bf5626e421dccff2a4917307117eeb8
+Merge: 44e67af f525b50
+Author: Sam Lea <samglea@example.com>
+Date:   Tue Apr 23 15:59:24 2024 -0500
+
+    Merge branch 'main' of https://bitbucket.org/lootgen/lootgen-repository into bugfix/LOOT-92-remove-character-portrait-field
+
+commit f525b50d801207b8b9d8e0edcafc614b30fa0e9e
+Merge: 6c64571 ff6606d
+Author: Collin Trehar <ctre97@gmail.com>
+Date:   Tue Apr 23 20:57:16 2024 +0000
+
+    Merged in bugfix/LOOT-120-fix-loading-animation (pull request #12)
+    
+    Updated test_prompt_page.html to allow text to be
+    
+    Approved-by: Levi Franklin
+
+commit 44e67af2e7a778e67146eb80ff3bccd29d707903
+Author: Sam Lea <samglea@example.com>
+Date:   Tue Apr 23 15:55:44 2024 -0500
+
+    removed character field here as well
+
+commit ff6606d0e87afbb393765bd39eba55f84202723d
+Author: Ctre97 <ctre97@gmail.com>
+Date:   Tue Apr 23 15:34:34 2024 -0500
+
+    Updated test_prompt_page.html to allow text to be
+    cleared upon clicking the "generate" button
+
+commit 6c64571cb4c535c918b47225c7941ec38f6dc1aa
+Merge: 29037e9 af1e74c
+Author: Collin Trehar <ctre97@gmail.com>
+Date:   Mon Apr 22 16:43:00 2024 +0000
+
+    Merged in bugfix/LOOT-117-proper-html-and-css-files (pull request #11)
+    
+    Bugfix/LOOT-117 proper html and css files
+    
+    Approved-by: Levi Franklin
+
+commit af1e74c6b656498815c4267d57fdb8b9d4851624
+Author: Ctre97 <ctre97@gmail.com>
+Date:   Mon Apr 22 11:15:50 2024 -0500
+
+    ensured that config.py and firebase_key.json
+    contained dummy data
+
+commit d64eaabb7ee845f707bcc6ea9cef9a04be8653f4
+Author: Ctre97 <ctre97@gmail.com>
+Date:   Mon Apr 22 11:11:54 2024 -0500
+
+    Ensured up to date HTML and CSS were in repsitory
+
+commit 29037e93e65d1cdb2faa3870c3f1c63c7f61cc0c
+Merge: b7682af f2be573
+Author: Collin Trehar <ctre97@gmail.com>
+Date:   Mon Apr 22 15:39:16 2024 +0000
+
+    Merged in bugfix/LOOT-116-proper-banner-rendering (pull request #10)
+    
+    Bugfix/LOOT-116 proper banner rendering
+    
+    Approved-by: Levi Franklin
+
+commit b7682af5f54d327db1b7ea355cf95446d5b68685
+Merge: 24d72f0 7c9fec4
+Author: Collin Trehar <ctre97@gmail.com>
+Date:   Mon Apr 22 15:22:55 2024 +0000
+
+    Merged in bugfix/LOOT-95-implement-loading-animation (pull request #9)
+    
+    Implemented loading animation for prompt page
+    
+    Approved-by: Levi Franklin
+
+commit f2be573e562e5c74a9534bdfc1c08f92f6254493
+Author: Ctre97 <ctre97@gmail.com>
+Date:   Mon Apr 22 01:54:07 2024 -0500
+
+    modified css pages to enable use of single css
+    page
+    
+    added global font to ensure uniform display
+    across pages
+
+commit dec1cc2cc770d64b40426a6e5acb4aee0910627e
+Author: Ctre97 <ctre97@gmail.com>
+Date:   Mon Apr 22 01:18:44 2024 -0500
+
+    modified css to allow for singular css file in
+    final project.
+
+commit 7c9fec4706aa34cab0d55dc66c8a97860f688a0f
+Author: Ctre97 <ctre97@gmail.com>
+Date:   Mon Apr 22 00:51:43 2024 -0500
+
+    Implemented loading animation for prompt page
+
+commit 24d72f0a357992d949bec17c5ce332f76cd6453a
+Merge: 3242055 3aab721
+Author: Sam Lea <samglea@yahoo.com>
+Date:   Mon Apr 22 00:38:59 2024 +0000
+
+    Merged in bugfix/LOOT-115-min-max-stats (pull request #8)
+    
+    Min max set to 1-20/24 and max name of 20 char
+    
+    Approved-by: Levi Franklin
+
+commit 3aab721cd7b31b74c0648211707c2b639656d6f4
+Author: Sam Lea <samglea@example.com>
+Date:   Sat Apr 20 16:32:22 2024 -0500
+
+    Min max set to 1-20/24 and max name of 20 char
+
+commit 324205534d28d8bf0d17b0594d71141346223aa1
+Merge: d0caf13 7627620
+Author: Sam Lea <samglea@yahoo.com>
+Date:   Sat Apr 20 20:13:28 2024 +0000
+
+    Merged in bugfix/LOOT-97-remove-the-slots-count-from-user (pull request #7)
+    
+    removed character count
+    
+    Approved-by: Levi Franklin
+
+commit 7627620573b3f8c01597d327706f9204fab1cad9
+Author: Sam Lea <samglea@example.com>
+Date:   Sat Apr 20 15:10:59 2024 -0500
+
+    removed character count
+
+commit d0caf13e96b7f405848fa245166efc331e82864c
+Author: Levi <lnfranklin1@gmail.com>
+Date:   Wed Apr 17 19:46:08 2024 -0500
+
+    Fixed routing issue for index page caused by pushes that were not synced with main before pushing.
+
+commit bde7f4ce6c4e5c0664b61a12350dc007a9d69c43
+Author: Ctre97 <ctre97@gmail.com>
+Date:   Tue Apr 16 23:51:40 2024 -0500
+
+    Added functional navbar to each page
+
+commit 0e5fca66b9e652caaed8e420e9290250d2f3659d
+Author: Ctre97 <ctre97@gmail.com>
+Date:   Tue Apr 16 23:45:34 2024 -0500
+
+    Added functional banner to "Character Detail" Page
+
+commit 86bee0cbf29650eb5cb30d1b4dd6872b99ab249c
+Merge: c63cd07 c0300db
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Wed Apr 17 01:06:50 2024 +0000
+
+    Merged in release/dev-dyl (pull request #6)
+    
+    Release/dev dyl
+    
+    Approved-by: Levi Franklin
+
+commit e4e7bdf0881452913e98d0146e3f15970f0977c6
+Merge: f3fb729 c63cd07
+Author: Levi Franklin <lfranklin6@leomail.tamuc.edu>
+Date:   Wed Apr 17 01:05:56 2024 +0000
+
+    Merged main into release/dev_env
+
+commit c0300dbf11ee3bec3527a848c223f9625d78f476
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Tue Apr 16 19:10:00 2024 -0500
+
+    Added js to add darkMode preferences to be saved in the user's localStorage browser cache. This also functionally allows for the saving of dark mode across pages. Load time is potentially an issue as it flashes the light theme before it loads the user's preference. Consider adding a wait() function that only runs the client's page when darkMode is ready.
+
+commit c63cd07e796cfe64c5aecb31820da4d9acd10db3
+Merge: 1f3d6fb 2997417
+Author: Levi Franklin <lfranklin6@leomail.tamuc.edu>
+Date:   Tue Apr 16 22:26:47 2024 +0000
+
+    Merged in LOOT-92-remove-character-portrait-field (pull request #5)
+    
+    Loot-92 corrected character field
+    
+    -Sam's commit approved by Levi
+
+commit 29974173a80dc3abff39691fd38c41a1f30b4a85
+Author: Sam Lea <samglea@example.com>
+Date:   Tue Apr 16 17:22:59 2024 -0500
+
+    Loot-92 corrected characted field
+
+commit dabd4bd9f59d1c2009da5dac11a143eb52fa6ea8
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Tue Apr 16 16:42:13 2024 -0500
+
+    Adding the Index.html
+
+commit 1f3d6fb09acdd1b9e80d573c190e3c1a29c618f1
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Tue Apr 16 21:38:29 2024 +0000
+
+    Initial Bitbucket Pipelines configuration
+
+commit 2cf1a9404af1b879e43cb6d00241bdde524e6624
+Merge: 1b73dc1 30b1ddb
+Author: Levi Franklin <lfranklin6@leomail.tamuc.edu>
+Date:   Wed Apr 10 22:25:44 2024 +0000
+
+    Merged bugfix/LOOT-84-lootgen-bug-fixes into main
+
+commit 30b1ddba52ca75b0972ce4ed639e61b80066f546
+Author: Levi <lnfranklin1@gmail.com>
+Date:   Wed Apr 10 17:24:45 2024 -0500
+
+    Implemented the app button in the banner bar to lead the user to the promp page.
+
+commit f3fb7297ae2694e44eca7655275a0625f9e020b8
+Merge: 827c3c2 1b73dc1
+Author: Levi Franklin <lfranklin6@leomail.tamuc.edu>
+Date:   Wed Apr 10 01:29:55 2024 +0000
+
+    Merged main into release/dev_env
+
+commit 1b73dc14d2905238d925df78752be3f408dd0a5b
+Merge: fd319b7 68661d0
+Author: Levi Franklin <lfranklin6@leomail.tamuc.edu>
+Date:   Tue Apr 9 21:53:46 2024 +0000
+
+    Merged in feature/LOOT-34-loot-generation-feature (pull request #3)
+    
+    Feature/LOOT-34 loot generation feature
+    
+    Approved-by: Sam Lea
+    Given idea by: Levi Franklin
+
+commit 68661d064c42fbf0a70e267b6514feed5a527a92
+Author: Levi <lnfranklin1@gmail.com>
+Date:   Tue Apr 9 15:07:34 2024 -0500
+
+    Updated prompt
+
+commit b02f2d65d640395136d7f3e77b5c4dd1dcfe207b
+Author: Levi <lnfranklin1@gmail.com>
+Date:   Tue Apr 9 14:57:38 2024 -0500
+
+    Added custom loot feature and health_checks
+
+commit 827c3c24fc23941d68b3509c5be27ec9f224cb8d
+Merge: 091e826 fd319b7
+Author: Levi Franklin <lfranklin6@leomail.tamuc.edu>
+Date:   Tue Apr 9 18:18:04 2024 +0000
+
+    Merged main into release/dev_env
+
+commit fd319b73648fb85fe1c58d2317359605d7fe6489
+Merge: 6c1957e 091e826
+Author: Collin Trehar <ctre97@gmail.com>
+Date:   Wed Mar 27 19:43:48 2024 +0000
+
+    Merged in release/dev_env (pull request #2)
+    
+    Updated new features for prompt transmissions
+    
+    Approved-by: Levi Franklin
+
+commit 091e826b36f145fe8cde12057061f80d4a826851
+Merge: 6c1957e 90b9bd3
+Author: Levi Franklin <lfranklin6@leomail.tamuc.edu>
+Date:   Sat Mar 23 05:33:35 2024 +0000
+
+    Merged bugfix/LOOT-78-back-end-update-database into release/dev_env
+
+commit 6c1957e75b3167e69c44f9bfb438fcf7db2cc756
+Merge: 6ff4447 84f0de7
+Author: Levi Franklin <lfranklin6@leomail.tamuc.edu>
+Date:   Sat Mar 23 05:24:49 2024 +0000
+
+    Merged feature/LOOT-74-back-end-prompt-transmission into dev_branch
+
+commit 84f0de7c42392ae26ef4e2f1ee45309a0e32eaf6
+Merge: 9d59ec8 585ebe9
+Author: Levi Franklin <lfranklin6@leomail.tamuc.edu>
+Date:   Sat Mar 23 05:20:05 2024 +0000
+
+    Merged bugfix/LOOT-78-back-end-update-database into feature/LOOT-74-back-end-prompt-transmission
+
+commit 90b9bd36057bf6eb1908aff620d85c0b7b074615
+Author: Levi <lnfranklin1@gmail.com>
+Date:   Sat Mar 23 00:17:56 2024 -0500
+
+    Updated new features for prompt transmissions
+
+commit 585ebe9baaf2a0312c7651d9eeaa8919a7a83cf6
+Author: Levi <lnfranklin1@gmail.com>
+Date:   Wed Mar 20 00:50:25 2024 -0500
+
+    Updated to include better notes
+
+commit 9d59ec884de11d6f6767afea9ae05be8224881f5
+Merge: 125f673 8d6674a
+Author: Levi <lnfranklin1@gmail.com>
+Date:   Tue Mar 5 19:04:45 2024 -0600
+
+    Merge branch 'Development_Branch' of https://bitbucket.org/lootgen/lootgen-repository into Development_Branch
+
+commit 125f673e7a4b339f7c500acbeabe078eb1558f83
+Author: Levi <lnfranklin1@gmail.com>
+Date:   Tue Mar 5 18:54:36 2024 -0600
+
+    Current development version 3/5
+
+commit 2bfe73a8f4b6d550ed8cd12276608d25e64addbc
+Author: Sam Lea <samglea@yahoo.com>
+Date:   Wed Mar 6 00:43:09 2024 +0000
+
+    webflow created online with Bitbucket
+
+commit 6db76770bbf583642f1e68dbb60148de03f1c27c
+Author: Sam Lea <samglea@yahoo.com>
+Date:   Wed Mar 6 00:42:35 2024 +0000
+
+    normalize created online with Bitbucket
+
+commit 0c60f54304cf1bbc8853ebbf4765dc9390b0b80b
+Author: Sam Lea <samglea@yahoo.com>
+Date:   Wed Mar 6 00:40:43 2024 +0000
+
+    dylans-lg-new.webflow created online with Bitbucket
+
+commit ac4fe0e8aa061dbeab963f53645ced15e200594c
+Author: Sam Lea <samglea@yahoo.com>
+Date:   Wed Mar 6 00:37:40 2024 +0000
+
+    character-information created online with Bitbucket
+
+commit be5ba4944a7ed5372962f75da90bcb6a5702d0ba
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Tue Mar 5 21:14:55 2024 +0000
+
+    character-storage.html -- very basic webflow dnd beyond inspired character storage page (work in progress)
+
+commit a972dc6a363a42cdeb39ffc01ae8355b2b6233da
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Tue Mar 5 20:24:00 2024 +0000
+
+    normalize.css -- same goes for this as the other CSS files, it should be stripped of its relevant styles and consolidated onto our single main CSS styles
+
+commit 9a3567fdf3cbdbcbc6bea3e82982a9f8415a09f6
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Tue Mar 5 20:22:15 2024 +0000
+
+    webflow.css - might not be necessary as this is likely just the default styles that come with any webflow page, meaning we would already have it. Consolidate anything in here that isn't included in our styles.css into that one CSS file.
+
+commit c0c5b27d5030a68e06de360ddb6efcf79d52b5a7
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Tue Mar 5 20:20:03 2024 +0000
+
+    dylans-lootgen-ai.webflow.css is the CSS styling for the webflow app ui webpages. Take the nonoverlapping styles and consolidate what is not already included in our main styles.css so that it will look how it is intended.
+
+commit dad85828f4afe7784201825646029872728d33ee
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Tue Mar 5 20:15:51 2024 +0000
+
+    app-learn.html allows users to learn how to use the lootgen app ui
+
+commit 99954a194d36930538477eb017993b846f70a72d
+Author: Dylan De La Rosa <delarosadyl@gmail.com>
+Date:   Tue Mar 5 20:14:25 2024 +0000
+
+    updated responsive app ui for all platforms. allows users to interact with lootie and create loot.
+
+commit 8d6674a93d57bcb5c2f6c4677572b3e86202b705
+Author: Levi Franklin <lfranklin6@leomail.tamuc.edu>
+Date:   Wed Feb 28 23:10:05 2024 +0000
+
+    Removed functions that were redundant
+
+commit ec498ab25628db3abc83112f1e908e9b2335f264
+Author: Levi Franklin <lfranklin6@leomail.tamuc.edu>
+Date:   Wed Feb 28 23:08:43 2024 +0000
+
+    Removed data
+
+commit c9c5716b007c11a4c387d46d79625809dcff6fdc
+Author: Levi Franklin <lfranklin6@leomail.tamuc.edu>
+Date:   Wed Feb 28 23:07:35 2024 +0000
+
+    Removed data
+
+commit bc037635d4a073724e70b872f3452916f6f41b1a
+Author: Levi <lnfranklin1@gmail.com>
+Date:   Wed Feb 28 17:04:14 2024 -0600
+
+    Uploading the user account system files
+
+commit e1dcb778e90c1c85eb5bf3a439cabd21b4779b41
+Author: Levi <lnfranklin1@gmail.com>
+Date:   Wed Feb 28 16:58:04 2024 -0600
+
+    Removed test
+
+commit 5b003e4c19a41fc02ad613a035145c7a6333f521
+Author: Levi <lnfranklin1@gmail.com>
+Date:   Wed Feb 28 16:51:56 2024 -0600
+
+    Testing this garbage
+
+commit 6ff4447e22e72b4067be9c794d061529b85f6dec
+Author: Levi <lnfranklin1@gmail.com>
+Date:   Wed Feb 28 16:41:10 2024 -0600
+
+     Deleting nonsense
+
+commit 0fa7e7bc4bd6920a3f6ae081ef3c5433358cf9b1
+Merge: a482bdf b1ada3b
+Author: Levi <lnfranklin1@gmail.com>
+Date:   Wed Feb 28 16:37:36 2024 -0600
+
+    Merge branch 'main' of https://bitbucket.org/lootgen/lootgen-repository
+
+commit a482bdfaee938201f75076e2dc9f44f70cf9a64d
+Author: Levi <lnfranklin1@gmail.com>
+Date:   Wed Feb 28 16:32:41 2024 -0600
+
+    Removed nonsense
+
+commit b1ada3bacea0ddc8bfc6332ade774a88e6c252bf
+Author: Levi <lnfranklin1@gmail.com>
+Date:   Wed Feb 28 16:23:41 2024 -0600
+
+    Updated user management
+
+commit b5ec1adc40cd98052a06591906b4894451907cca
+Author: Levi Franklin <lfranklin6@leomail.tamuc.edu>
+Date:   Mon Feb 12 18:00:46 2024 +0000
+
+    signup.html edited online with Bitbucket
+
+commit 1f0bb082a32e7c0a8c02cc032316cda865705c4b
+Author: Samglea <samglea@yahoo.com>
+Date:   Tue Feb 6 16:22:59 2024 -0600
+
+    removed
+
+commit 1e34d725b1c0566c50a3f7ec4e8447eda5becbaa
+Author: Samglea <samglea@yahoo.com>
+Date:   Tue Feb 6 16:06:10 2024 -0600
+
+    user class first attempt, is this sending to main?
+
+commit 11790f61747aa350e042369229297df88d5b1ffe
+Author: Collin Trehar <ctre97@gmail.com>
+Date:   Tue Feb 6 21:35:55 2024 +0000
+
+    signup.html created online with Bitbucket
+
+commit b6aa84f1d47e4fdf9929017829fc0e73d3075b48
+Author: Levi Franklin <lfranklin6@leomail.tamuc.edu>
+Date:   Wed Jan 24 01:15:17 2024 +0000
+
+    Initial commit

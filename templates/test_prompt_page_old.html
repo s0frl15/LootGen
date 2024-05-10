@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Characters</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .grid-list {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+        }
+
+        .grid-item {
+            flex: 0 0 200px;
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .purple-box {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #800080; /* Purple background color */
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .white-text {
+            color: white;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Select Characters for Next Step</h2>
+    <form id="characterSelectionForm" action="{{ url_for('prompt.select_characters') }}" method="post">
+        <div id="characterList">
+            <h3>My Characters</h3>
+            <ul id="myCharacters">
+                {% for character in characters %}
+                <li class="character-item">
+                    <div class="character-card">
+                        <div class="character-card-header">
+                            <img src="{{ character.avatar_url }}" alt="Character Avatar" class="character-avatar">
+                            <h4>{{ character.name }}</h4>
+                            <p>Level {{ character.level }} | {{ character.race }} | {{ character.class_name }}</p>
+                        </div>
+                        <div class="character-card-footer">
+                            <input type="checkbox" id="char_{{ character.character_id }}" class="character-checkbox" name="character_ids" value="{{ character.character_id }}">
+                            <label for="char_{{ character.character_id }}">{{ character.name }}</label>                            
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <button type="button" class="submit-button">Submit Selection</button>
+    </form>
+    <a href="{{ url_for('characters.user_page') }}" class="back-button">Back to Characters Overview</a>
+    <div id="responseSection" class="hidden">
+        <h3>Response</h3>
+        <p id="gptResponse"></p>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const submitButton = document.querySelector('.submit-button');
+            submitButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                const formData = new FormData();
+                document.querySelectorAll('.character-checkbox:checked').forEach((checkbox) => {
+                    console.log('Appending character ID:', checkbox.value); // Log for debugging
+                    formData.append('character_ids', checkbox.value);
+                });
+        
+                fetch('{{ url_for("prompt.select_characters") }}', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Response:', data); // Log for debugging
+                    const gptResponseElement = document.getElementById('gptResponse');
+                    gptResponseElement.innerHTML = ''; // Clear the element before typing
+                    gptResponseElement.classList.add('typing'); // Add the "typing" class
+
+                    let i = 0;
+                    const typeInterval = setInterval(() => {
+                        if (i < data.gpt_response.length) {
+                            gptResponseElement.innerHTML = data.gpt_response.slice(0, i++);
+                        } else {
+                            clearInterval(typeInterval);
+                            gptResponseElement.classList.remove('typing'); // Remove the "typing" class
+                            document.getElementById('responseSection').classList.remove('hidden');
+                        }
+                    }, 25);
+                })
+
+                .catch(error => console.error('Error:', error));
+            });
+        });
+</script>
+        
+</body>
+</html>

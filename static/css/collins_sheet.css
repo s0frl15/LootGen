@@ -1,0 +1,40 @@
+.w-layout-blockcontainer-2 {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .w-layout-vflex {
+    display: flex;
+    flex: 1;
+  }
+  
+  .flex-block, .flex-block-4 {
+    flex: 1;
+  }
+  
+  .section, .section-2 {
+    flex: 1;
+  }
+  
+  .columns-3 {
+    display: flex;
+    width: 100%;
+  }
+  
+  .w-col {
+    flex: 1;
+  }
+  
+  .div-block-2, .div-block-3, .list, .list-2 {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .w-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
