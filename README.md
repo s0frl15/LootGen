@@ -6,6 +6,11 @@
 
 This program serves as an advanced assistant to Dungeons and Dragons players and Dungeon Masters. With this program, you may run requests to have your characters evaluated by an AI assistant that will provide either suggestions about appropriate Wizards of the Coast created magical loot, or you may request that the AI create new loot for you in line with the magic item creation rules set for in the 5th Edition Dungeon Master's Guide.
 
+## Status
+
+[![CodeQL](https://github.com/s0frl15/LootGen/actions/workflows/codeql.yml/badge.svg)](https://github.com/s0frl15/LootGen/actions/workflows/codeql.yml)
+[![Bandit](https://github.com/s0frl15/LootGen/actions/workflows/bandit.yml/badge.svg)](https://github.com/s0frl15/LootGen/actions/workflows/bandit.yml)
+
 ## Dependencies, Frameworks and Technologies Used
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
